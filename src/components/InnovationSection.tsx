@@ -18,9 +18,13 @@ const InnovationSection = () => {
             </button>
           </div>
           <div className="relative h-[400px] rounded-lg overflow-hidden">
-            <div className="absolute inset-0 bg-gradient-to-tr from-ferrari-red/20 via-ferrari-gray to-black">
-              <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_20%,rgba(220,0,0,0.4)_0%,transparent_60%)]" />
-              <div className="absolute inset-0 bg-[conic-gradient(from_45deg_at_center,rgba(0,0,0,0.8)_0%,transparent_60%)]" />
+            <img
+              src="/lovable-uploads/a0e41ec5-400d-4346-87dd-fbba7d5f8537.png"
+              alt="Ferrari F1 Technology"
+              className="w-full h-full object-cover"
+            />
+            <div className="absolute inset-0 bg-gradient-to-tr from-ferrari-red/20 via-transparent to-black">
+              <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_20%,rgba(220,0,0,0.2)_0%,transparent_60%)]" />
             </div>
           </div>
         </div>

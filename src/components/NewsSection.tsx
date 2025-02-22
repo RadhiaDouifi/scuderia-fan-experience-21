@@ -1,5 +1,6 @@
 
-const NewsCard = ({ category, title, description, date, author }: {
+const NewsCard = ({ image, category, title, description, date, author }: {
+  image: string;
   category: string;
   title: string;
   description: string;
@@ -11,9 +12,12 @@ const NewsCard = ({ category, title, description, date, author }: {
 }) => (
   <div className="bg-ferrari-gray rounded-lg overflow-hidden hover:transform hover:scale-105 transition-all duration-300">
     <div className="h-48 relative">
-      <div className="absolute inset-0 bg-gradient-to-br from-ferrari-red/20 via-black to-ferrari-gray">
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_70%_30%,rgba(220,0,0,0.3)_0%,transparent_70%)]" />
-      </div>
+      <img
+        src={image}
+        alt={title}
+        className="w-full h-full object-cover"
+      />
+      <div className="absolute inset-0 bg-gradient-to-t from-black via-black/50 to-transparent" />
     </div>
     <div className="p-6">
       <div className="flex items-center justify-between mb-4">
@@ -35,6 +39,7 @@ const NewsCard = ({ category, title, description, date, author }: {
 const NewsSection = () => {
   const news = [
     {
+      image: "/lovable-uploads/342776c9-c778-42b2-80c5-7c4bb13f7ab5.png",
       category: "Technology",
       title: "Driving Innovation",
       description: "Discover how Ferrari and IBM are pushing the boundaries of what's possible in motorsport.",
@@ -45,6 +50,7 @@ const NewsSection = () => {
       }
     },
     {
+      image: "/lovable-uploads/e367f05f-879d-4e07-acd2-9339eda55cb2.png",
       category: "Formula 1",
       title: "The Future of Racing",
       description: "Explore the technological advancements shaping the future of Formula 1.",
@@ -55,6 +61,7 @@ const NewsSection = () => {
       }
     },
     {
+      image: "/lovable-uploads/ee39c959-179b-4b95-8a43-bfb9e38a8aee.png",
       category: "Teamwork",
       title: "Behind the Scenes",
       description: "Get an exclusive look at the teamwork and strategy behind Ferrari's success.",

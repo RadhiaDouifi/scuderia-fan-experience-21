@@ -5,8 +5,12 @@ const HeroSection = () => {
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
       <div className="absolute inset-0 z-0">
-        <div className="w-full h-full bg-gradient-to-br from-black via-ferrari-gray to-ferrari-red/20" />
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(220,0,0,0.1)_0%,transparent_100%)]" />
+        <img
+          src="/lovable-uploads/170ba8b4-fbfc-43ba-aeff-dc3dfbd92dbc.png"
+          alt="Ferrari F1 Car"
+          className="w-full h-full object-cover"
+        />
+        <div className="absolute inset-0 bg-gradient-to-t from-black via-black/70 to-transparent" />
       </div>
       
       <div className="container mx-auto px-4 pt-20 z-10 text-center">
