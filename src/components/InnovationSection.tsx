@@ -17,12 +17,11 @@ const InnovationSection = () => {
               Get Started
             </button>
           </div>
-          <div className="relative">
-            <img
-              src="/lovable-uploads/f99af83a-2a19-4cf2-95b7-0cb51bada1c2.png"
-              alt="Ferrari F1 Car"
-              className="rounded-lg shadow-xl"
-            />
+          <div className="relative h-[400px] rounded-lg overflow-hidden">
+            <div className="absolute inset-0 bg-gradient-to-tr from-ferrari-red/20 via-ferrari-gray to-black">
+              <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_20%,rgba(220,0,0,0.4)_0%,transparent_60%)]" />
+              <div className="absolute inset-0 bg-[conic-gradient(from_45deg_at_center,rgba(0,0,0,0.8)_0%,transparent_60%)]" />
+            </div>
           </div>
         </div>
       </div>

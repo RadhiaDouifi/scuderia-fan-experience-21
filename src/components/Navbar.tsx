@@ -7,7 +7,7 @@ const Navbar = () => {
       <div className="container mx-auto px-4 py-4">
         <div className="flex items-center justify-between">
           <Link to="/" className="flex items-center space-x-2">
-            <img src="/lovable-uploads/e4ff85c8-608a-41bd-bc44-167704fb0d66.png" alt="Ferrari-IBM Logo" className="h-12 w-auto" />
+            <div className="text-2xl font-bold text-white">Ferrari<span className="text-ferrari-red">IBM</span></div>
           </Link>
           <div className="hidden md:flex items-center space-x-8">
             <Link to="/" className="text-white hover:text-ferrari-red transition-colors">Home</Link>
